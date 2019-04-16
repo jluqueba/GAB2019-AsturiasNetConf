@@ -1,0 +1,15 @@
+{
+  "NServiceBus.MessageId": "3308a44a-b259-4971-9040-aa2000981e2e",
+  "NServiceBus.MessageIntent": "Publish",
+  "NServiceBus.RelatedTo": "d38777d1-f4f5-4954-8b35-aa200097f8c2",
+  "NServiceBus.ConversationId": "20701cff-bc65-40fd-a06f-aa200097f8c2",
+  "NServiceBus.CorrelationId": "d38777d1-f4f5-4954-8b35-aa200097f8c2",
+  "NServiceBus.OriginatingMachine": "MININT-4D0E2KB",
+  "NServiceBus.OriginatingEndpoint": "Dem03.Sales",
+  "$.diagnostics.originating.hostid": "1803e85804b7752620828ec9014b1838",
+  "NServiceBus.ReplyToAddress": "Dem03.Sales",
+  "NServiceBus.ContentType": "text\/xml",
+  "NServiceBus.EnclosedMessageTypes": "Messages.Events.OrderPlaced, Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.Version": "7.1.6",
+  "NServiceBus.TimeSent": "2019-03-30 09:13:50:660145 Z"
+}
