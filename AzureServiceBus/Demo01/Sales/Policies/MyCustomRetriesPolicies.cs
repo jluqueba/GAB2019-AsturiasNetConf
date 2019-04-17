@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Demo04.ASB.Sales.Policies
+namespace Sales.Policies
 {
     public class MyCustomRetriesPolicies
     {

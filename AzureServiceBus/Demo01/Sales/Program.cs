@@ -4,7 +4,7 @@ using System;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace Demo04.ASB.Sales
+namespace Sales
 {
     class Program
     {
@@ -21,9 +21,8 @@ namespace Demo04.ASB.Sales
 
 			// Endpoint is a component with send/receive capabilities
 			// Each endpoint need a name that identify it
-			var endpointConfiguration = new EndpointConfiguration("Demo04.ASB.Sales");
-			endpointConfiguration.EnableInstallers();
-			
+			var endpointConfiguration = new EndpointConfiguration("Sales");
+			endpointConfiguration.EnableInstallers();			
 
 			// Configure recoverability
 			//var recoverability = endpointConfiguration.Recoverability();

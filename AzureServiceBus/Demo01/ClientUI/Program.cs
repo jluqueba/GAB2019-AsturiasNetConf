@@ -6,7 +6,7 @@ using System;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace Demo04.ASB.ClientUI
+namespace ClientUI
 {
     class Program
     {
@@ -28,7 +28,7 @@ namespace Demo04.ASB.ClientUI
 
             // Endpoint is a component with send/receive capabilities
             // Each endpoint need a name that identify it
-            var endpointConfiguration = new EndpointConfiguration("Demo04.ASB.ClientUI");
+            var endpointConfiguration = new EndpointConfiguration("ClientUI");
 			endpointConfiguration.EnableInstallers();
 
 			// Azure ServiceBus is advance transport, supports native Pub/Sub, no need persistence
@@ -37,7 +37,7 @@ namespace Demo04.ASB.ClientUI
 
 			//Specifiy that PlaceOrder must be send to Sales endpoint
 			var routing = transport.Routing();
-            routing.RouteToEndpoint(typeof(PlaceOrder), "Demo04.ASB.Sales");
+            routing.RouteToEndpoint(typeof(PlaceOrder), "Sales");
 
             // Endpoint need to start process
             // Use Configure wait in order to avoid capturing ans restoring Context 

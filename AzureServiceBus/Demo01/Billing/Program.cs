@@ -4,7 +4,7 @@ using System;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace Demo04.ASB.Billing
+namespace Billing
 {
     class Program
     {
@@ -21,7 +21,7 @@ namespace Demo04.ASB.Billing
 
 			// Endpoint is a component with send/receive capabilities
 			// Each endpoint need a name that identify it
-			var endpointConfiguration = new EndpointConfiguration("Demo04.ASB.Billing");
+			var endpointConfiguration = new EndpointConfiguration("Billing");
 			endpointConfiguration.EnableInstallers();
 
 			// Azure ServiceBus is advance transport, supports native Pub/Sub, no need persistence

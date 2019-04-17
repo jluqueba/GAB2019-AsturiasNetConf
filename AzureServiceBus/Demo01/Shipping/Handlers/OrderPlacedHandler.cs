@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo04.ASB.Shipping.Handlers
+namespace Shipping.Handlers
 {
     public class OrderPlacedHandler : IHandleMessages<OrderPlaced>
     {

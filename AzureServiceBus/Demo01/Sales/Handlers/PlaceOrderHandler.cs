@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo04.ASB.Sales.Handlers
+namespace Sales.Handlers
 {
     public class PlaceOrderHandler : IHandleMessages<PlaceOrder>
     {
@@ -23,7 +23,7 @@ namespace Demo04.ASB.Sales.Handlers
 
             // Throw exception in order to check retries
             // This is a systemic exception
-            //throw new Exception("BOOM");
+            throw new Exception("BOOM");
 
             // This is a transient exception %20 probabilities
             //if (random.Next(0,5) == 0)
