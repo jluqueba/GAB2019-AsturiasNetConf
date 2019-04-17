@@ -6,12 +6,14 @@
     <LangVersion>7.3</LangVersion>
     <AssemblyName>Sales</AssemblyName>
     <RootNamespace>Sales</RootNamespace>
+    <UserSecretsId>d2ee995f-8212-4ca5-a78f-bed8f61ce8cd</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="2.2.0" />
     <PackageReference Include="NServiceBus" Version="7.1.6" />
     <PackageReference Include="NServiceBus.Transport.AzureServiceBus" Version="1.1.0" />
   </ItemGroup>

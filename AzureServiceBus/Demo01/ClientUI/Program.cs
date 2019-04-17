@@ -19,7 +19,8 @@ namespace ClientUI
 			// Load configuration
 			var builder = new ConfigurationBuilder()
 				.SetBasePath(Directory.GetCurrentDirectory())
-				.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+				.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+				.AddUserSecrets<Program>();
 
 			IConfigurationRoot configuration = builder.Build();
 
